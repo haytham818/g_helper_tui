@@ -5,6 +5,16 @@ edition = "2024"
 build = "build.rs"
 
 [dependencies]
+clap = "4.5.53"
+log = "0.4.29"
+ratatui = "0.29.0"
+tokio = "1.48.0"
+windows = { version = "0.62.2", features = [
+    "Win32_Foundation",
+    "Win32_Security",
+    "Win32_System_LibraryLoader",
+    "Win32_System_Threading",
+] }
 
 [build-dependencies]
 embed-resource = "3.0.6"
